@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const generateSVGLogo = require('./util/generateSVGLogo');
 const fs = require('fs');
 
+// Created the questions that will be asked at the command line
 inquirer
     .prompt([
     {
@@ -32,15 +33,16 @@ inquirer
     },
     
 ])
+    //Handling the data recieved from Inquirer prompts and creating the SVG file  
+
     .then((data) =>
     fs.writeFile('./examples/logo.svg', generateSVGLogo(data), (err) => {
-      if(err){
-          console.log(err);
-      }
-      else{
-          console.log('Generated logo.svg')
-
-      }
+        if(err){
+            console.log(err);
+        }
+        else{
+            console.log('Generated logo.svg')
+        }
     }))
 
 
