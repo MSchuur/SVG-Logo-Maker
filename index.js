@@ -1,6 +1,6 @@
 // Creating the modules required
 const inquirer = require('inquirer');
-const generateSVGLogo = require('./lib/generateSVGLogo');
+const generateSVGLogo = require('./util/generateSVGLogo');
 const fs = require('fs');
 
 inquirer

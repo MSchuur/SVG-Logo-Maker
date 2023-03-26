@@ -1,35 +1,33 @@
-const shapes = require("../lib/shapes.js")
+const shapes = require("../lib/shapes")
 const circle = require("../lib/circle.js")
-const triangle = require("../lib/triangle")
-//Function where svg is rendered. First I create the svg tag, since it's the 
-//same for all shapes I do this before the switch. Then I create the shape
-//element in the switch.  These are all concatinated into a string variable
-//and returned
+const triangle = require("../lib/triangle.js")
+const square = require("../lib/square.js")
+
 const generateSVG = (data) => {
-   console.log(data)
-   let newStr = ""
-   const newShape = new shapes
-   newStr = newShape.render();
+    console.log(data)
+    let newStr = ""
+    const newShape = new shapes();
+    newStr = newShape.render();
    
-      switch(data.shapeType){
+    switch(data.shapeType){
         
         case 'Circle':
             const newCircle = new circle(data.chars, data.charColor, data.shapeColor)
+            console.log(newCircle)
             newStr += `\n     ${newCircle.renderMiddle()}\n     ${newCircle.renderBottom()}`
             break;
-
-         case 'Triangle':
+        case 'Triangle':
             const newTriangle = new triangle(data.chars, data.charColor, data.shapeColor);
+            console.log(newTriangle)
             newStr += `\n     ${newTriangle.renderMiddle()}\n   ${newTriangle.renderBottom()}`;
             break;
-         case 'Square':
+        case 'Square':
             const newSquare = new square(data.chars, data.charColor, data.shapeColor);
+            console.log(newSquare)
             newStr += `\n     ${newSquare.renderMiddle()}\n     ${newSquare.renderBottom()}`;
             break;
-
-
-      }
-      return newStr;
+    }
+    return newStr;
 }
 
 module.exports = generateSVG
