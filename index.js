@@ -18,17 +18,18 @@ inquirer
       validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
     {
+      type: 'list',
+      message: 'Choose the shape you wish to use for your logo: ',
+      name: 'shapeType',
+      choices: ['Circle', 'Triangle', 'Square']
+    },
+    {
       type: 'input',
       message: 'What color would you like the shape of your logo to be. Enter color keyword or hexidecinal number: ',
       name: 'shapeColor',
       validate: (input) => {if(input) {return true} else {return 'I require an input'}}
     },
-    {
-      type: 'list',
-      message: 'Choose the shape you wish to use for your logo: ',
-      name: 'shapeType',
-      choices: ['Circle', 'Triangle', 'Square']
-  },
+    
 ])
     .then((data) =>
     fs.writeFile('./examples/logo.svg', generateSVGLogo(data), (err) => {
