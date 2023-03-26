@@ -14,17 +14,17 @@ const generateSVG = (data) => {
         case 'Circle':
             const newCircle = new circle(data.chars, data.charColor, data.shapeColor)
             console.log(newCircle)
-            newStr += `\n     ${newCircle.renderMiddle()}\n     ${newCircle.renderBottom()}`
+            newStr += `\n     ${newCircle.renderShape()}\n     ${newCircle.renderText()}`
             break;
         case 'Triangle':
             const newTriangle = new triangle(data.chars, data.charColor, data.shapeColor);
             console.log(newTriangle)
-            newStr += `\n     ${newTriangle.renderMiddle()}\n   ${newTriangle.renderBottom()}`;
+            newStr += `\n     ${newTriangle.renderShape()}\n   ${newTriangle.renderText()}`;
             break;
         case 'Square':
             const newSquare = new square(data.chars, data.charColor, data.shapeColor);
             console.log(newSquare)
-            newStr += `\n     ${newSquare.renderMiddle()}\n     ${newSquare.renderBottom()}`;
+            newStr += `\n     ${newSquare.renderShape()}\n     ${newSquare.renderText()}`;
             break;
     }
     return newStr;
