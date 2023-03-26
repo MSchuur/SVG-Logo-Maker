@@ -9,7 +9,8 @@ inquirer
       type: 'input',
       message: 'Enter upto three characters to be shown on your logo: ',
       name:   'chars',
-      validate: (input) => {if(input) {return true} else {return 'I require an input'}}
+      validate: (input) => {if(input) {return true} else {return 'I require an input'}},
+      validate: (input) => {if(input.length <=3) {return true} else {return 'Only three characters are permitted!'}}
     },
     {
       type: 'input',
