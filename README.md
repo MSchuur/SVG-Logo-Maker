@@ -15,22 +15,26 @@ Every company or organization requires a Logo to be reckonized. This is a Comman
 ## Installation
 To install the SVG Logo generater, Git Clone this repo to a local instance.
 
-
+<img width="1280" alt="Clone-Repository" src="https://user-images.githubusercontent.com/120262482/227810787-f436e657-2b38-4f1c-8c9c-ed413ab276e5.png">
 
 After you have cloned the repository using the terminal ensure you navigate to the newly cloned directory and run 'npm install' from the CLI. This will install 'Inquirer' and 'Jest' into the appropriate dependencies fron the 'package.json' file to run the generator.
 
+<img width="1274" alt="npm-install" src="https://user-images.githubusercontent.com/120262482/227810807-6b828cd4-2285-4e5a-8e12-d863c899deda.png">
 
 ## Usage
 Once you have finished install required dependencies start the SVG Logo Generator by typing 'node index.js' in the CLI.
 
-
+<img width="1277" alt="node-index js" src="https://user-images.githubusercontent.com/120262482/227810820-e1e4c504-15b7-414c-b139-69d8ef2fe8a8.png">
 
 Answer all the prompts in the CLI.
 
+<img width="1280" alt="Prompts" src="https://user-images.githubusercontent.com/120262482/227810918-bc07abc0-7da3-4b6a-a9b0-aeb865ed6a73.png">
 
-After answering all the prompts your SVG Logo file will be generated and written to the 'examples' folder as a file named 'logo.svg'.
+After answering all the prompts your SVG Logo file will be generated and written to the 'examples' folder as a file named 'logo.svg' and the message'Generated logo,svg' will appear in the terminal. 
 
 Open the 'examples' folder and right click on the 'logo.svg' file and use 'Open with Live Server' to view your SVG Logo in your browser.
+
+<img width="257" alt="Logo" src="https://user-images.githubusercontent.com/120262482/227810926-fdb6bdb2-9fd3-4961-a01a-56711fe3316d.png">
 
 ## License
 This project does not have a license attached.
