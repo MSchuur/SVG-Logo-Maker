@@ -15,7 +15,7 @@ Every company or organization requires a Logo to be reckonized. This is a Comman
 ## Installation
 To install the SVG Logo generater, Git Clone this repo to a local instance.
 
-<img width="1280" alt="Clone-Repository" src="https://user-images.githubusercontent.com/120262482/227810787-f436e657-2b38-4f1c-8c9c-ed413ab276e5.png">
+<img width="1277" alt="Clone-Repository" src="https://user-images.githubusercontent.com/120262482/227811046-43b37a9c-6a65-49a3-b5c5-89578dd1e505.png">
 
 After you have cloned the repository using the terminal ensure you navigate to the newly cloned directory and run 'npm install' from the CLI. This will install 'Inquirer' and 'Jest' into the appropriate dependencies fron the 'package.json' file to run the generator.
 
