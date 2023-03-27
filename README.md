@@ -36,6 +36,10 @@ Open the 'examples' folder and right click on the 'logo.svg' file and use 'Open 
 
 <img width="257" alt="Logo" src="https://user-images.githubusercontent.com/120262482/227810926-fdb6bdb2-9fd3-4961-a01a-56711fe3316d.png">
 
+Watch the following video on how to use this generator.
+
+[SVG-Logo-Generator.webm](https://user-images.githubusercontent.com/120262482/227909852-320ce4b8-e343-4f88-be7b-19951b35a0b9.webm)
+
 ## License
 This project does not have a license attached.
 
